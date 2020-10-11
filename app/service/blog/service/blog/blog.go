@@ -2,8 +2,9 @@ package blog
 
 import (
 	"context"
-	"framework/app/api/blog"
-	"framework/app/service/blog/model"
+
+	"github.com/hongshengjie/framework/app/api/blog"
+	"github.com/hongshengjie/framework/app/service/blog/model"
 
 	"github.com/golang/protobuf/ptypes/empty"
 )

@@ -1,4 +1,4 @@
-module framework
+module github.com/hongshengjie/framework
 
 go 1.13
 

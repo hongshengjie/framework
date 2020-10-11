@@ -1,6 +1,6 @@
 package model
 
-import "framework/app/api/blog"
+import "github.com/hongshengjie/framework/app/api/blog"
 
 var nav []*blog.Nav
 

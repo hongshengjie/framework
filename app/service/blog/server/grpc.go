@@ -2,11 +2,12 @@ package server
 
 import (
 	"flag"
-	"framework/app/api/blog"
-	"framework/app/service/blog/model"
-	blogsvc "framework/app/service/blog/service/blog"
 	"net"
 	"time"
+
+	"github.com/hongshengjie/framework/app/api/blog"
+	"github.com/hongshengjie/framework/app/service/blog/model"
+	blogsvc "github.com/hongshengjie/framework/app/service/blog/service/blog"
 
 	"google.golang.org/grpc"
 	"google.golang.org/grpc/reflection"

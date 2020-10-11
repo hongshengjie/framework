@@ -3,10 +3,11 @@ package main
 import (
 	"context"
 	"fmt"
-	blog "framework/app/api/blog"
 	"log"
 	"strconv"
 	"sync"
+
+	blog "github.com/hongshengjie/framework/app/api/blog"
 
 	"google.golang.org/grpc"
 )

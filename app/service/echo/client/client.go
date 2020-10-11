@@ -3,7 +3,7 @@ package main
 // import (
 // 	"context"
 // 	"fmt"
-// 	echo "framework/app/api/echo"
+// 	echo "github.com/hongshengjie/framework/app/api/echo"
 // )
 
 // func main() {

@@ -3,7 +3,8 @@ package echo
 import (
 	"context"
 	"fmt"
-	pb "framework/app/api/echo"
+
+	pb "github.com/hongshengjie/framework/app/api/echo"
 )
 
 // Service Service

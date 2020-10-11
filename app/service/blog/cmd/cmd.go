@@ -2,13 +2,14 @@ package main
 
 import (
 	"flag"
-	"framework/app/service/blog/model"
-	"framework/app/service/blog/server"
-	"framework/conf"
 	"os"
 	"os/signal"
 	"syscall"
 	"time"
+
+	"github.com/hongshengjie/framework/app/service/blog/model"
+	"github.com/hongshengjie/framework/app/service/blog/server"
+	"github.com/hongshengjie/framework/conf"
 )
 
 func main() {

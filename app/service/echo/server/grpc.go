@@ -2,10 +2,11 @@ package server
 
 import (
 	"flag"
-	"framework/app/api/echo"
-	echosvc "framework/app/service/echo/service/echo"
 	"net"
 	"time"
+
+	"github.com/hongshengjie/framework/app/api/echo"
+	echosvc "github.com/hongshengjie/framework/app/service/echo/service/echo"
 
 	"google.golang.org/grpc"
 	"google.golang.org/grpc/reflection"

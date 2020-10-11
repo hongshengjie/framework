@@ -1,8 +1,8 @@
 package model
 
 import (
-	"framework/app/api/blog"
-	bb "framework/database/blotdb"
+	"github.com/hongshengjie/framework/app/api/blog"
+	bb "github.com/hongshengjie/framework/database/blotdb"
 
 	"github.com/golang/protobuf/ptypes"
 	"google.golang.org/protobuf/proto"

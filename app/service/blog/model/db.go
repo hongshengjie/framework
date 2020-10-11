@@ -2,9 +2,10 @@ package model
 
 import (
 	"encoding/binary"
-	"framework/app/api/blog"
-	"framework/conf"
-	"framework/database/blotdb"
+
+	"github.com/hongshengjie/framework/app/api/blog"
+	"github.com/hongshengjie/framework/conf"
+	"github.com/hongshengjie/framework/database/blotdb"
 )
 
 // Init Init

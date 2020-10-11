@@ -1,7 +1,7 @@
 package blog
 
 // import (
-// 	"framework/disc/etcdv3"
+// 	"github.com/hongshengjie/framework/disc/etcdv3"
 
 // 	grpc "google.golang.org/grpc"
 // 	"google.golang.org/grpc/resolver"

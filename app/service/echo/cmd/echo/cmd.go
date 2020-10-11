@@ -1,11 +1,12 @@
 package main
 
 import (
-	"framework/app/service/echo/server"
 	"os"
 	"os/signal"
 	"syscall"
 	"time"
+
+	"github.com/hongshengjie/framework/app/service/echo/server"
 )
 
 func main() {
