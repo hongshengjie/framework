@@ -1,0 +1,56 @@
+syntax = "proto3";
+
+option go_package = "blog";
+
+import "google/protobuf/empty.proto";
+import "google/protobuf/timestamp.proto";
+
+//go:generate protoc -I app/proto app/proto/blog/*.proto --go_out=app/api  --go-grpc_out=app/api
+//protoc -I app/proto app/proto/blog/*.proto --js_out=import_style=commonjs:app/service/blog/web/  --grpc-web_out=import_style=commonjs,mode=grpcwebtext:app/service/blog/web/ 
+service Blog{
+    // 首页获取的数据
+    rpc Index(google.protobuf.Empty)returns(IndexResp);
+    // 列表页面
+    rpc List(ListReq)returns(ListResp);
+    // 详情页
+    rpc Detail(DetailReq)returns(Post);
+    // 编辑页面
+    rpc Edit (Post) returns (google.protobuf.Empty);
+}
+
+message IndexReq{}
+
+message IndexResp{
+    repeated Nav navs = 1;
+}
+message Nav{
+    string Name = 1;
+    repeated string SubName = 2;
+}
+
+message ListReq{
+    int64 page = 1;
+    bool asc = 2;
+    int64 pre_id = 3;
+}
+
+message ListResp{
+    repeated Post posts = 1;
+}
+
+message Post{
+    int64 id = 1;
+    string title = 2;
+    string md_content =3;
+    repeated string tags = 4;
+    google.protobuf.Timestamp ctime = 5;
+    google.protobuf.Timestamp mtime = 6;
+}
+
+message DetailReq{
+    int64 id = 1;
+}
+
+
+
+

@@ -1,0 +1,14 @@
+title = "app"
+[db]
+dbpath = "./my.db"
+buckets = ["Post","Tag","User"]
+
+
+[[nav]]
+    name = "language"
+    subName = ["go","rust"]
+[[nav]]
+    name = "哲学"
+    subName = ["尼采","王阳明"]
+        
+ 
